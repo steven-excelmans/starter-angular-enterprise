@@ -1,10 +1,24 @@
-# Starter Angular
+# Starter Angular Enterprise
 
-A simple Angular starter project using the following frameworks.
+A simple Angular starter project for Enterprise level using the following frameworks.
 
 - `Angular`
 - `Prettier`
 - `Tailwind CSS`
+
+__*Developer dependencies*__
+
+- `Prettier`
+- `Source Map Explorer`
+
+
+---
+https://medium.com/dev-jam/5-tips-best-practices-to-organize-your-angular-project-e900db08702e
+
+https://github.com/ahsansoftengineer/AngularTemplate
+
+https://levelup.gitconnected.com/where-shall-i-put-that-core-vs-shared-module-in-angular-5fdad16fcecc
+
 
 ## Development server
 

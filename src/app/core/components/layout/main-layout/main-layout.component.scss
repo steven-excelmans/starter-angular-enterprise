@@ -1,0 +1,14 @@
+:host {
+  @apply block flex h-screen flex-col justify-between subpixel-antialiased;
+}
+
+:host {
+  overflow: hidden !important;
+}
+
+main {
+  @apply flex flex-1 overflow-auto bg-gray-50 p-6;
+}
+
+
+

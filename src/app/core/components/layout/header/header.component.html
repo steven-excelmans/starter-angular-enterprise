@@ -1,0 +1,66 @@
+<header>
+    <nav class="sticky top-0 z-50 flex items-center justify-between bg-charcoal py-5 px-6">
+        <!--logo-->
+        <a
+            class="z-50 cursor-pointer text-lg font-extralight uppercase tracking-tight text-gray-50"
+            routerLink="home">
+            Starter
+            <span class="-translate-x-0.5 font-medium">Angular Enterprise</span>
+        </a>
+
+        <!--links-->
+        <div class="hidden space-x-6 font-thin md:flex">
+            <a
+                routerLink="home"
+                routerLinkActive="link--active"
+                class="group px-2 py-1 text-xl lowercase text-gray-50">
+                Home
+                <span class="block h-0.5 max-w-0 bg-gray-50 transition-all duration-500 group-hover:max-w-full"></span>
+            </a>
+            <a
+                routerLink="admin"
+                routerLinkActive="link--active"
+                class="group px-2 py-1 text-xl lowercase text-gray-50">
+                Admin
+                <span class="block h-0.5 max-w-0 bg-gray-50 transition-all duration-500 group-hover:max-w-full"></span>
+            </a>
+        </div>
+
+        <!--hamburger menu-->
+        <button
+            class="hamburger z-30 block focus:outline-none md:hidden"
+            (click)="toggleMenu()"
+            [ngClass]="isMenuOpen ? 'open' : ''">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+
+        <!--mobile menu-->
+        <div
+            *ngIf="isMenuOpen"
+            @toggleMenuAnimation
+            class="absolute inset-0 z-20 flex min-h-screen flex-col items-center divide-y divide-gray-50 self-end bg-forest-green px-4 py-1 pt-20">
+            <div
+                class="w-full py-3 text-center"
+                (click)="toggleMenu()">
+                <a
+                    class="block py-2 font-light lowercase text-gray-50 hover:text-gray-50"
+                    routerLink="home"
+                    routerLinkActive="link--active">
+                    home
+                </a>
+            </div>
+            <div
+                class="w-full py-3 text-center"
+                (click)="toggleMenu()">
+                <a
+                    class="block py-2 font-light lowercase text-gray-50 hover:text-gray-50"
+                    routerLink="admin"
+                    routerLinkActive="link--active">
+                    admin
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>

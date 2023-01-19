@@ -1,0 +1,30 @@
+{
+  "htmlWhitespaceSensitivity": "ignore",
+  "tabWidth": 4,
+  "bracketSameLine": true,
+  "singleQuote": false,
+  "trailingComma": "none",
+  "singleAttributePerLine": true,
+  "printWidth": 120,
+  "quoteProps": "consistent",
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.js"
+      ],
+      "options": {
+        "semi": true,
+        "singleQuote": true
+      }
+    },
+    {
+      "files": [
+        "*.scss"
+      ],
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}

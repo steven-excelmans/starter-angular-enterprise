@@ -1,0 +1,48 @@
+:host {
+  display: block;
+}
+
+.hamburger {
+  @apply relative h-6 w-6 translate-y-0.5 cursor-pointer transition-all duration-200;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  @apply absolute top-0 left-0 h-[3px] w-6 rotate-0 transform bg-gray-50 transition-all duration-500 content-none;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  @apply bg-gray-50;
+  transform: translateY(14px);
+}
+
+.open {
+  @apply fixed right-[1.7rem] top-[26px] translate-y-0 rotate-90 transform;
+}
+
+.open .hamburger-top {
+  @apply bg-gray-50;
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  @apply bg-gray-50;
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.link--active {
+  @apply rounded bg-morning-blue;
+}
+
+.link--active > span {
+  @apply hidden;
+}
